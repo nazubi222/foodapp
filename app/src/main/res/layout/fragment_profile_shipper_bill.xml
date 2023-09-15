@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/maucam">
+            <ImageView
+                android:id="@+id/imgshipperbill_back"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="left"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đơn hàng"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ người nhận"
+                android:textSize="18dp"
+                android:textStyle="italic"/>
+            <TextView
+                android:id="@+id/tv_foodshippernamecus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên | số điện thoại"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv_foodshipperlocationcus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Địa chỉ nhận hàng"
+                android:textSize="15dp"/>
+
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/img_foodshipperbill"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/baseline_image_24"
+                android:gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/tv_foodshipperbillname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên món- Tên quán"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_foodshipperlocationres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="dia chi"
+                    android:layout_gravity="left"
+                    android:textSize="15dp"
+                    android:textStyle="italic"
+                    android:inputType="number"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_foodshipperbillprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Đơn giá"
+                    android:layout_gravity="left"
+                    android:textSize="15dp"
+                    android:textColor="@color/cam"
+                    android:textStyle="italic"
+                    android:gravity="center"
+                    android:inputType="number"/>
+
+
+                <TextView
+                    android:id="@+id/tv_foodshipperbillamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft= "40dp"
+                    android:hint="xN"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phương thức thanh toán"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv_phuongthucthanhtoanshipper"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Phương thức thanh toán"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textAlignment="viewEnd"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chi tiết thanh toán:"
+            android:textSize="18dp"
+            android:padding="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phí vận chuyển"/>
+                <TextView
+                    android:id="@+id/tv_foodshipperbillship"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="phí vận chuyển"
+                    android:layout_alignParentRight="true"
+                    android:textAlignment="viewEnd"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng tiền hàng"/>
+                <TextView
+                    android:id="@+id/tv_foodshipperbillsum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="tổng tiền hàng"
+                    android:layout_alignParentRight="true"
+                    android:textAlignment="viewEnd"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng thanh toán"/>
+                <TextView
+                    android:id="@+id/tv_foodshipperbillsumpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="tổng thanh toán"
+                    android:layout_alignParentRight="true"
+                    android:textAlignment="viewEnd"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bt_receivebill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhận đơn hàng"
+
+            android:backgroundTint="@color/maucam"/>
+        <Button
+            android:id="@+id/bt_getbill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đã lấy hàng thành công"
+            android:backgroundTint="@color/maucam"/>
+        <Button
+            android:id="@+id/tv_deliverysuccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giao hàng thành công"
+            android:backgroundTint="@color/maucam"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/maucam">
+        <ImageView
+            android:id="@+id/imgcardmainpay_back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trang thanh toán"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ nhận hàng"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/tv_foodcartpayname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên | số điện thoại"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/tv_foodcartpaylocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Địa chỉ nhận hàng"
+                android:textSize="18dp"/>
+
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_foodcartpay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phương thức thanh toán"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv_phuongthucthanhtoan"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Phương thức thanh toán"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textAlignment="viewEnd"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chi tiết thanh toán:"
+            android:textSize="18dp"
+            android:padding="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tổng phí vận chuyển"/>
+                    <TextView
+                        android:id="@+id/tv_foodcartpayshipsum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="tổng phí vận chuyển"
+                        android:layout_alignParentRight="true"
+                        android:textAlignment="viewEnd"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tổng tiền hàng"/>
+                    <TextView
+                        android:id="@+id/tv_foodcartpayfoodsum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="tổng tiền hàng"
+                        android:layout_alignParentRight="true"
+                        android:textAlignment="viewEnd"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tổng thanh toán"/>
+                    <TextView
+                        android:id="@+id/tv_foodcartpaysum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="tổng thanh toán"
+                        android:layout_alignParentRight="true"
+                        android:textAlignment="viewEnd"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@id/tv_foodcartpaysumprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_foodcartpaybuy"
+                android:hint="Tổng tiền"
+                android:padding="6dp"
+                android:textColor="@color/cam"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_foodcartpaybuy"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Thanh toán"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@color/maucam"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FoodOrder App</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_home">Home</string>
+    <string name="title_cart">Đơn hàng</string>
+    <string name="title_favorite">Thích</string>
+    <string name="title_notifications">Thông báo</string>
+    <string name="title_profile">Tôi</string>
+
+    <string name="first_fragment_label">First Fragment</string>
+    
+    <string-array name="foodtype">
+        <item>Cơm</item>
+        <item>Bún/Phở</item>
+        <item>Đồ uống</item>
+        <item>Đồ ăn vặt</item>
+        <item>Khác</item>
+    </string-array>
+    <item name="imgaddfood_image" type="id" />
+    <item name="tv_foodcartpaysumprice" type="id" />
+    <item name="tv_itemfoodcartpayship" type="id" />
+    <item name="rlt_receiver" type="id" />
+    <item name="rlt_getbill" type="id" />
+    <item name="rcvcentrespchat" type="id" />
+</resources>

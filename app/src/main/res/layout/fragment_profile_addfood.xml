@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/maucam">
+            <ImageView
+                android:id="@+id/imgprofileaddfood_back"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="left"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thêm món"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên đồ ăn"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"/>
+        <ImageView
+            android:id="@id/imgaddfood_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/image_plus_icon"
+            android:layout_marginLeft="10dp"/>
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên đồ ăn"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/tvprofile_foodname"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:hint="Tên đồ ăn"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đơn giá"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/tvprofile_foodprice"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:hint="Đơn giá"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loại"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <AutoCompleteTextView
+                android:id="@+id/tvprofile_foodtypeex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cơm"
+                android:backgroundTint="@color/white"
+                android:inputType="none"
+                android:textStyle="bold"
+                android:layout_gravity="left"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/tvprofile_foodinfo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Tên đồ ăn"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/button_addfood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm món"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/maucam"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

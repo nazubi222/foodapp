@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentHome">
+
+    <fragment
+        android:id="@+id/fragmentCart"
+        android:name="com.example.foodorderapp.fragment.FragmentCart"
+        android:label="FragmentCart" >
+        <action
+            android:id="@+id/action_fragmentCart_to_fragmentCartMainPay"
+            app:destination="@id/fragmentCartMainPay" />
+        <action
+            android:id="@+id/action_fragmentCart_to_fragmentProfileInfomation"
+            app:destination="@id/fragmentProfileInfomation" />
+        <action
+            android:id="@+id/action_fragmentCart_to_fragmentProfileLocation"
+            app:destination="@id/fragmentProfileLocation" />
+        <action
+            android:id="@+id/action_fragmentCart_to_fragmentCartHistoryBill"
+            app:destination="@id/fragmentCartHistoryBill" />
+        <action
+            android:id="@+id/action_fragmentCart_to_fragmentCartStatusBill"
+            app:destination="@id/fragmentCartStatusBill" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFavorite"
+        android:name="com.example.foodorderapp.fragment.FragmentFavorite"
+        android:label="FragmentFavorite" >
+        <action
+            android:id="@+id/action_fragmentFavorite_to_fragmentFoodView"
+            app:destination="@id/fragmentFoodView" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.foodorderapp.fragment.FragmentHome"
+        android:label="FragmentHome" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentHomeDrinks"
+            app:destination="@id/fragmentHomeDrinks" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentHomeHotFood"
+            app:destination="@id/fragmentHomeHotFood" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentHomeNoodles"
+            app:destination="@id/fragmentHomeNoodles" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentHomeRice"
+            app:destination="@id/fragmentHomeRice" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentHomeSnacks"
+            app:destination="@id/fragmentHomeSnacks" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentFoodView"
+            app:destination="@id/fragmentFoodView" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentHomeSearch"
+            app:destination="@id/fragmentHomeSearch" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfile"
+        android:name="com.example.foodorderapp.fragment.FragmentProfile"
+        android:label="FragmentProfile" >
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentProfileLocation"
+            app:destination="@id/fragmentProfileLocation" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentProfileRegulatoryPolicy"
+            app:destination="@id/fragmentProfileRegulatoryPolicy" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentProfileInfomation"
+            app:destination="@id/fragmentProfileInfomation" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentProfileEditname"
+            app:destination="@id/fragmentProfileEditname" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentProfileChangePassword"
+            app:destination="@id/fragmentProfileChangePassword" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentProfileCenterSupport"
+            app:destination="@id/fragmentProfileCenterSupport" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentProfileRestaurantsEXXXX"
+            app:destination="@id/fragmentProfileRestaurantsEXXXX" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentProfileShipper"
+            app:destination="@id/fragmentProfileShipper" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentProfileCentreSPAdmin"
+            app:destination="@id/fragmentProfileCentreSPAdmin" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentNotification"
+        android:name="com.example.foodorderapp.fragment.FragmentNotification"
+        android:label="FragmentNotification" />
+    <fragment
+        android:id="@+id/fragmentHomeDrinks"
+        android:name="com.example.foodorderapp.fragment.FragmentHomeDrinks"
+        android:label="FragmentHomeDrinks" >
+        <action
+            android:id="@+id/action_fragmentHomeDrinks_to_fragmentFoodView"
+            app:destination="@id/fragmentFoodView" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHomeHotFood"
+        android:name="com.example.foodorderapp.fragment.FragmentHomeHotFood"
+        android:label="FragmentHomeHotFood" >
+        <action
+            android:id="@+id/action_fragmentHomeHotFood_to_fragmentFoodView"
+            app:destination="@id/fragmentFoodView" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHomeNoodles"
+        android:name="com.example.foodorderapp.fragment.FragmentHomeNoodles"
+        android:label="FragmentHomeNoodles" >
+        <action
+            android:id="@+id/action_fragmentHomeNoodles_to_fragmentFoodView"
+            app:destination="@id/fragmentFoodView" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHomeRice"
+        android:name="com.example.foodorderapp.fragment.FragmentHomeRice"
+        android:label="FragmentHomeRice" >
+        <action
+            android:id="@+id/action_fragmentHomeRice_to_fragmentFoodView"
+            app:destination="@id/fragmentFoodView" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHomeSnacks"
+        android:name="com.example.foodorderapp.fragment.FragmentHomeSnacks"
+        android:label="FragmentHomeSnacks" >
+        <action
+            android:id="@+id/action_fragmentHomeSnacks_to_fragmentFoodView"
+            app:destination="@id/fragmentFoodView" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFoodView"
+        android:name="com.example.foodorderapp.fragment.FragmentFoodView"
+        android:label="FragmentFoodView" >
+        <action
+            android:id="@+id/action_fragmentFoodView_to_fragmentFoodViewRestaurant"
+            app:destination="@id/fragmentFoodViewRestaurant" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFoodViewRestaurant"
+        android:name="com.example.foodorderapp.fragment.FragmentFoodViewRestaurant"
+        android:label="FragmentFoodViewRestaurant" />
+    <fragment
+        android:id="@+id/fragmentProfileAddLocation"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileAddLocation"
+        android:label="FragmentProfileAddLocation" />
+    <fragment
+        android:id="@+id/fragmentProfileCenterSupport"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileCentreSupport"
+        android:label="FragmentProfileCenterSupport" >
+        <action
+            android:id="@+id/action_fragmentProfileCenterSupport_to_fragmentProfileCentreSPChat"
+            app:destination="@id/fragmentProfileCentreSPChat" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfileChangePassword"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileChangePassword"
+        android:label="FragmentProfileChangePassword" />
+    <fragment
+        android:id="@+id/fragmentProfileEditname"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileEditname"
+        android:label="FragmentProfileEditname" />
+    <fragment
+        android:id="@+id/fragmentProfileInfomation"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileInfomation"
+        android:label="FragmentProfileInfomation" >
+        <action
+            android:id="@+id/action_fragmentProfileInfomation_to_fragmentProfileInfomationEdit"
+            app:destination="@id/fragmentProfileInfomationEdit" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfileLocation"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileLocation"
+        android:label="FragmentProfileLocation" >
+        <action
+            android:id="@+id/action_fragmentProfileLocation_to_fragmentProfileAddLocation"
+            app:destination="@id/fragmentProfileAddLocation" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfileRegulatoryPolicy"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileRegulatoryPolicy"
+        android:label="FragmentProfileRegulatoryPolicy" />
+    <fragment
+        android:id="@+id/fragmentProfileRestaurantsEXXXX"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileRestaurantsEXXXX"
+        android:label="FragmentProfileRestaurantsEXXXX" >
+        <action
+            android:id="@+id/action_fragmentProfileRestaurantsEXXXX_to_fragmentProfileRestaurantsAddEXXXX"
+            app:destination="@id/fragmentProfileRestaurantsAddEXXXX" />
+        <action
+            android:id="@+id/action_fragmentProfileRestaurantsEXXXX_to_fragmentProfileRestaurantsMenuEXXXX2"
+            app:destination="@id/fragmentProfileRestaurantsMenuEXXXX2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfileRestaurantsMenuEXXXX2"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileRestaurantsMenuEXXXX"
+        android:label="FragmentProfileRestaurantsMenuEXXXX" >
+        <action
+            android:id="@+id/action_fragmentProfileRestaurantsMenuEXXXX2_to_fragmentProfileRestaurantsAddFoodEXXXX"
+            app:destination="@id/fragmentProfileRestaurantsAddFoodEXXXX" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfileRestaurantsAddEXXXX"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileRestaurantsAddEXXXX"
+        android:label="FragmentProfileRestaurantsAddEXXXX" />
+    <fragment
+        android:id="@+id/fragmentProfileRestaurantsAddFoodEXXXX"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileRestaurantsAddFoodEXXXX"
+        android:label="FragmentProfileRestaurantsAddFoodEXXXX" />
+    <fragment
+        android:id="@+id/fragmentProfileInfomationEdit"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileInfomationEdit"
+        android:label="FragmentProfileInfomationEdit" />
+    <fragment
+        android:id="@+id/fragmentCartHistory"
+        android:name="com.example.foodorderapp.fragment.FragmentCartHistory"
+        android:label="FragmentCartHistory" />
+    <fragment
+        android:id="@+id/fragmentCartMain"
+        android:name="com.example.foodorderapp.fragment.FragmentCartMain"
+        android:label="FragmentCartMain" />
+    <fragment
+        android:id="@+id/fragmentCartStatus"
+        android:name="com.example.foodorderapp.fragment.FragmentCartStatus"
+        android:label="FragmentCartStatus" />
+    <fragment
+        android:id="@+id/fragmentCartMainPay"
+        android:name="com.example.foodorderapp.fragment.FragmentCartMainPay"
+        android:label="FragmentCartMainPay" >
+        <action
+            android:id="@+id/action_fragmentCartMainPay_to_fragmentCart"
+            app:destination="@id/fragmentCart" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfileShipper"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileShipper"
+        android:label="FragmentProfileShipper" >
+        <action
+            android:id="@+id/action_fragmentProfileShipper_to_fragmentProfileShipperBillFood"
+            app:destination="@id/fragmentProfileShipperBillFood" />
+        <action
+            android:id="@+id/action_fragmentProfileShipper_to_fragmentProfileShipperHistory"
+            app:destination="@id/fragmentProfileShipperHistory" />
+        <action
+            android:id="@+id/action_fragmentProfileShipper_to_fragmentProfileShipperProcessing"
+            app:destination="@id/fragmentProfileShipperProcessing" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfileShipperBillFood"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileShipperBillFood"
+        android:label="FragmentProfileShipperBillFood" />
+    <fragment
+        android:id="@+id/fragmentProfileShipperProcessing"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileShipperProcessing"
+        android:label="FragmentProfileShipperProcessing" >
+        <action
+            android:id="@+id/action_fragmentProfileShipperProcessing_to_fragmentProfileShipperBillFood"
+            app:destination="@id/fragmentProfileShipperBillFood" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfileShipperHistory"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileShipperHistory"
+        android:label="FragmentProfileShipperHistory" >
+        <action
+            android:id="@+id/action_fragmentProfileShipperHistory_to_fragmentProfileShipperBillFood"
+            app:destination="@id/fragmentProfileShipperBillFood" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCartHistoryBill"
+        android:name="com.example.foodorderapp.fragment.FragmentCartHistoryBill"
+        android:label="FragmentCartHistoryBill" />
+    <fragment
+        android:id="@+id/fragmentCartStatusBill"
+        android:name="com.example.foodorderapp.fragment.FragmentCartStatusBill"
+        android:label="FragmentCartStatusBill" />
+    <fragment
+        android:id="@+id/fragmentHomeSearch"
+        android:name="com.example.foodorderapp.fragment.FragmentHomeSearch"
+        android:label="FragmentHomeSearch" >
+        <action
+            android:id="@+id/action_fragmentHomeSearch_to_fragmentFoodView"
+            app:destination="@id/fragmentFoodView" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfileCentreSPAdmin"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileCentreSPAdmin"
+        android:label="FragmentProfileCentreSPAdmin" >
+        <action
+            android:id="@+id/action_fragmentProfileCentreSPAdmin_to_fragmentProfileCentreAdminMesRev"
+            app:destination="@id/fragmentProfileCentreAdminMesRev" />
+        <action
+            android:id="@+id/action_fragmentProfileCentreSPAdmin_to_fragmentProfileCentreSPChat"
+            app:destination="@id/fragmentProfileCentreSPChat" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfileCentreSPChat"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileCentreSPChat"
+        android:label="FragmentProfileCentreSPChat" />
+    <fragment
+        android:id="@+id/fragmentProfileCentreAdminMesRev"
+        android:name="com.example.foodorderapp.fragment.FragmentProfileCentreAdminMesRev"
+        android:label="FragmentProfileCentreAdminMesRev" >
+        <action
+            android:id="@+id/action_fragmentProfileCentreAdminMesRev_to_fragmentProfileCentreSPChat"
+            app:destination="@id/fragmentProfileCentreSPChat" />
+    </fragment>
+</navigation>

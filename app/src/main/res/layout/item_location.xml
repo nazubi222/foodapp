@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/white">
+
+    <RadioButton
+        android:id="@+id/rdbt_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvprofile_locationother"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Khác"
+            android:textStyle="italic"
+            android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/tvprofile_locationmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phường xã/ Quân/ Thành phố"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/tvdeleteLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Xóa thông tin"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+</LinearLayout>

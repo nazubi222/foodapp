@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <ImageView
+        android:id="@+id/img_itemfoodcartpay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_image_24"
+        android:gravity="center_vertical"/>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_itemfoodcartpayname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên món- Tên quán"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_itemfoodcartpaylocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Địa chỉ"
+            android:textSize="15dp"
+            android:textStyle="italic"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_itemfoodcartpayprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Đơn giá"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:textColor="@color/cam"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:inputType="number"/>
+
+
+            <TextView
+                android:id="@+id/tv_itemfoodcartpayamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft= "40dp"
+                android:hint="xN"
+                android:textSize="15dp"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phí vận chuyển:  "
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_itemfoodcartpayship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="xxxđ"
+            android:textColor="@color/cam"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+
+
+
+
+
+</LinearLayout>
