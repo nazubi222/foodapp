@@ -57,7 +57,7 @@ public class FragmentProfileRestaurantsAddFoodEXXXX extends Fragment{
     private Button btAddfood;
     private NavController navController;
     private ProgressDialog progressDialog;
-    private String selectedOption;
+    private String selectedOption = "Cơm";
     private Uri uri;
 
 
