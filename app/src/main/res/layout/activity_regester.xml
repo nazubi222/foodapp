@@ -57,7 +57,7 @@
         android:layout_height="57dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/button_login"
-        android:text="Regester"
+        android:text="Register"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18dp"
